@@ -5,6 +5,13 @@ for row in range(2, Sheet.max_row + 1):
     cell = Sheet.cell(row, 9)
     if cell.value is None:
         cell.value = 0
+for row in range(2, Sheet.max_row + 1):
+    cell = Sheet.cell(row, 10)
+    if cell.value is None:
+        cell.value = 0
 
-
+for row in range(2, Sheet.max_row + 1):
+    cell = Sheet.cell(row, 12)
+    if cell.value is None:
+        cell.value = 0
 wb.save('Covid_Deaths_New.xlsx')
